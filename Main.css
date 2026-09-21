@@ -129,3 +129,51 @@ nav a:hover {
 #themeToggle:hover {
     transform: translateY(-2px);
 }
+
+
+/* =========================
+        EXAM DATES
+========================= */
+
+.ExamDates {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+.Exams {
+     background-color: #111722;
+    border: 1px solid #202938;
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+}
+
+.NearestTest {
+    background-color: #111722;
+    border: 1px solid #111722;
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+
+    transition:
+    background-color 0.5s ease,
+    font-weight 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.5s ease,
+    color 0.3s ease;
+}
+
+.NearestTest:hover {
+    background-color: rgb(223, 199, 64);
+    border-color: rgb(223, 199, 64);
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgb(223, 199, 64);
+    color: black;
+    font-style: oblique;
+    font-weight: bolder;
+    transition: font-weight 0.3s ease;
+    transition: background-color 0.5s ease;
+}
