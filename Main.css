@@ -153,7 +153,7 @@ nav a:hover {
 
 .NearestTest {
     background-color: #111722;
-    border: 1px solid #111722;
+    border: 1px solid #202938;
     border-radius: 16px;
     padding: 20px;
     color: white;
@@ -169,7 +169,7 @@ nav a:hover {
 .NearestTest:hover {
     background-color: rgb(223, 199, 64);
     border-color: rgb(223, 199, 64);
-    transform: scale(1.02);
+    transform: scale(1.07);
     box-shadow: 0 0 20px rgb(223, 199, 64);
     color: black;
     font-style: oblique;
