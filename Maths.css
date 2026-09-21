@@ -1,0 +1,19 @@
+:root {
+    --bg: #080B10;
+    --text: white;
+    --card: #111722;
+    --border: #202938;
+    --accent: #6bd5dd;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
