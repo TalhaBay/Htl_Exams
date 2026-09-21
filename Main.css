@@ -7,7 +7,7 @@
 
 /* =========================
    THEME COLORS
-   ========================= */
+========================= */
 
 :root {
     --bg: #080B10;
@@ -23,13 +23,13 @@ body.light {
     --text: #11151c;
     --button-bg: #111722;
     --button-border: #202938;
-    --button-text: #ffffff;
+    --button-text: #11151c;
     --accent: #168b96;
 }
 
 /* =========================
    MAIN PAGE
-   ========================= */
+========================= */
 
 body {
     margin: 0;
@@ -44,7 +44,7 @@ body {
 
 /* =========================
    TITLE
-   ========================= */
+========================= */
 
 .Thetitle {
     font-family: "Gondens", sans-serif;
@@ -54,7 +54,7 @@ body {
 
 /* =========================
    SUBTITLE
-   ========================= */
+========================= */
 
 .Undertitle {
     color: var(--text);
@@ -66,7 +66,7 @@ h2 {
 
 /* =========================
    NAVIGATION
-   ========================= */
+========================= */
 
 #helpingHand {
     color: var(--text);
@@ -77,26 +77,23 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 14px;
-
     list-style: none;
     padding: 0;
 }
 
 nav a {
     display: inline-block;
-
     padding: 10px 22px;
     border-radius: 12px;
 
     background-color: var(--button-bg);
     border: 1px solid var(--button-border);
-    color: var(--button-text);
+    color: beige;
 
     text-decoration: none;
 
     transition:
         background-color 0.9s ease,
-        color 0.3s ease,
         border-color 0.3s ease,
         transform 0.2s ease;
 }
@@ -111,11 +108,10 @@ nav a:hover {
 
 /* =========================
    LIGHT MODE BUTTON
-   ========================= */
+========================= */
 
 #themeToggle {
     padding: 10px 18px;
-
     border: 1px solid var(--button-border);
     border-radius: 10px;
 
