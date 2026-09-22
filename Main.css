@@ -102,6 +102,7 @@ nav a:hover {
     background-color: gold;
     border-color: gold;
     color: #080B10;
+    box-shadow: 0 0 20px rgb(223, 199, 64);
 
     transform: translateY(-2px);
 }
@@ -176,4 +177,28 @@ nav a:hover {
     font-weight: bolder;
     transition: font-weight 0.3s ease;
     transition: background-color 0.5s ease;
+}
+
+@media (max-width: 480px) {
+    body {
+    font-size: 16px;
+    padding: 15px;
+    }
+
+    nav ul {
+        columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 14px;
+    list-style: none;
+    padding: 0;
+}
+
+.ExamDates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
 }
