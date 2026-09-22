@@ -1,9 +1,19 @@
 :root {
     --bg: #080B10;
-    --text: white;
-    --card: #111722;
-    --border: #202938;
+    --text: #ffffff;
+    --button-bg: #111722;
+    --button-border: #202938;
+    --button-text: #ffffff;
     --accent: #6bd5dd;
+}
+
+body.light {
+    --bg: #f4f6f8;
+    --text: #11151c;
+    --button-bg: #111722;
+    --button-border: #202938;
+    --button-text: #11151c;
+    --accent: #168b96;
 }
 
 body {
@@ -12,8 +22,45 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav a {
-    background-color: var(--card);
-    border: 1px solid var(--border);
+/* =========================
+   NAVIGATION
+========================= */
+
+#helpingHand {
     color: var(--text);
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 12px;
+
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-border);
+    color: beige;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.9s ease,
+        border-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: gold;
+    border-color: gold;
+    color: #080B10;
+    box-shadow: 0 0 20px rgb(223, 199, 64);
+
+    transform: translateY(-2px);
 }
