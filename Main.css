@@ -180,16 +180,34 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
-    body {
+            body {
     font-size: 16px;
     padding: 15px;
     min-width: 66.5%;
     }
 
-    nav ul {
-        columns: repeat(2, 1fr);
+   nav a {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 12px;
+
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-border);
+    color: beige;
+    gap: 1px;
+    grid-template-columns: repeat(2, 1fr);
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.9s ease,
+        border-color 0.3s ease,
+        transform 0.2s ease;
+
+nav ul {
+    display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 14px;
     list-style: none;
     padding: 0;
 }
@@ -200,6 +218,6 @@ nav a:hover {
     gap: 20px;
     padding: 20px;
     list-style: none;
+    }
 }
-
 }
