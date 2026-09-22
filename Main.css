@@ -183,12 +183,13 @@ nav a:hover {
     body {
     font-size: 16px;
     padding: 15px;
+    min-width: 66.5%;
     }
 
     nav ul {
         columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 14px;
+    gap: 10px;
     list-style: none;
     padding: 0;
 }
